@@ -1,0 +1,10 @@
+(function() {
+    //create a module
+    var app = angu.module('myApp', ['ngRoute']); //will use route when we will implement routing
+
+    //create a controller
+    app.controller('HomeController', function ($scope) {
+        //here scope is used for share data between view and controller
+        $scope.Message = "This is angular sucessful created by me";
+    })
+})
